@@ -11,17 +11,18 @@ def main():
     # Create Meeting Time Dictionary
     meeting_time = {'CS101': '8:00 a.m.', 'CS102': '9:00 a.m.', 'CS103': '10:00 a.m.', 'NT110': '11:00 a.m.', 'CM241': '1:00 p.m.'}
 
-# Create big dictionary
-    course_information = {instructor(), room_num(), meeting_time()}
+
+
 
     # Input the Course that user wants Information about
     id_input = input('Please enter course ID: ')
 
     # Call information in dictionary through "get" which is linked to the input
-    x = course_information.get(id_input)
+
+    xyz = instructor.get(id_input), room_num.get(id_input), meeting_time.get(id_input)
 
     #Print 
-    print(course_information(x))
+    print(xyz)
 # Call the Main
 main()
 
